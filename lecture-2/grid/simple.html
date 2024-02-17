@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smple grid</title>
+    <style>
+
+        .wrapper {
+            display: grid;
+            /* Фикс сетка */
+            grid-template-columns: 300px repeat(2, 1fr);
+            
+            background-color: burlywood;
+            /* grid-template-columns: 200px 1fr 2fr; */
+
+            
+            /* grid-template-columns: repeat(3, 1fr); */
+            gap: 10px;
+            grid-auto-rows: minmax(100px, 300px);
+        }
+        .wrapper div {
+            background: green;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>Four</div>
+        <div>Five</div>
+    </div>
+</body>
+
+</html>

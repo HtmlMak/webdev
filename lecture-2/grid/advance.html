@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 100px;
+            background-color: burlywood;
+            gap: 5px;
+        }
+
+        .wrapper div {
+            background: green;
+            padding: 20px;
+        }
+        
+        .box1 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background: red;
+        }
+
+        .box2 {
+            grid-column-start: 1;
+            grid-row-start: 2;
+            grid-row-end: 5;
+        }
+
+        /* 
+
+         */
+
+     /*    .box3 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        } */
+
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box1">One</div>
+        <div class="box2">Two</div>
+        <div class="box3">Three</div>
+        <div class="box4">Four</div>
+        <div class="box5">Five</div>
+    </div>
+</body>
+
+</html>
