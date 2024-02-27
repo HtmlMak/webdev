@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block main %}
+<section>
+    <h1>Заголовок!</h1>
+</section>
+
+<ul>
+    {% for item in items %}
+    <li class="{{ loop.index0 }}">
+        {% if loop.first %}
+            первый элемент
+        {% endif %}
+        {{ item }}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

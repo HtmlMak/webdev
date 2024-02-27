@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block main %}
+
+<ul>
+    {% for task in tasks %}
+    <li>
+        id: {{ task.id }} <br>
+
+        {{ task.title }} <br>
+        {{ task.content }}
+    </li>
+    {% endfor %}
+</ul>
+
+{{ wtf.quick_form(form) }}
+{% endblock %}

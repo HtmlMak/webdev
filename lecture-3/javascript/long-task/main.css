@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+#app {
+    margin: 0 auto;
+    background: #cecece;
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+    max-width: 960px;
+    min-height: 80px;
+}
+
+#indicator {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+}
+#indicator > div {
+    aspect-ratio: 1;
+    background: #ccc;
+}
