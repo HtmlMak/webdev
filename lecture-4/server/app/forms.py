@@ -10,7 +10,7 @@ class DemoForm(FlaskForm):
     sex = SelectMultipleField('Пол', choices=(
         ('m', 'муж'),
         ('f', 'жен'),
-        ('none', 'не указывать')
+        ('none', 'не указывать') 
     ), default='f')
     submit = SubmitField('Отправить')
 

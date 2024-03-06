@@ -14,5 +14,5 @@
     {% endfor %}
 </ul>
 
-{{ wtf.quick_form(form) }}
+{{ wtf.quick_form(form, button_map={'submit': 'primary'}) }}
 {% endblock %}
